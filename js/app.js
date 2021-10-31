@@ -58,7 +58,9 @@
 	function publish(data) {
 		pubnub.publish({
 			channel: channel,
-			message: data
+			message: { 
+       				 plots: plots // your array goes here
+   			 } 
 		});
      }
 
